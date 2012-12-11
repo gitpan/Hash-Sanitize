@@ -4,10 +4,10 @@ use warnings FATAL => 'all';
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME             => 'HASH::Sanitize',
+    NAME             => 'Hash::Sanitize',
     AUTHOR           => q{Horea Gligan <gliganh@gmail.com>},
-    VERSION_FROM     => 'lib/HASH/Sanitize.pm',
-    ABSTRACT_FROM    => 'lib/HASH/Sanitize.pm',
+    VERSION_FROM     => 'lib/Hash/Sanitize.pm',
+    ABSTRACT_FROM    => 'lib/Hash/Sanitize.pm',
     LICENSE          => 'Artistic_2_0',
     PL_FILES         => {},
     MIN_PERL_VERSION => 5.006,
@@ -22,5 +22,5 @@ WriteMakefile(
         'Clone'             => 0
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean => { FILES => 'HASH-Sanitize-*' },
+    clean => { FILES => 'Hash-Sanitize-*' },
 );

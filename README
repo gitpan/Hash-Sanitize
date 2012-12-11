@@ -1,4 +1,4 @@
-HASH-Sanitize
+Hash-Sanitize
 
 The README is used to introduce the module and provide instructions on
 how to install the module, any machine dependencies it may have (for
@@ -26,21 +26,21 @@ SUPPORT AND DOCUMENTATION
 After installing, you can find documentation for this module with the
 perldoc command.
 
-    perldoc HASH::Sanitize
+    perldoc Hash::Sanitize
 
 You can also look for information at:
 
     RT, CPAN's request tracker (report bugs here)
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=HASH-Sanitize
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Hash-Sanitize
 
     AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/HASH-Sanitize
+        http://annocpan.org/dist/Hash-Sanitize
 
     CPAN Ratings
-        http://cpanratings.perl.org/d/HASH-Sanitize
+        http://cpanratings.perl.org/d/Hash-Sanitize
 
     Search CPAN
-        http://search.cpan.org/dist/HASH-Sanitize/
+        http://search.cpan.org/dist/Hash-Sanitize/
 
 
 LICENSE AND COPYRIGHT

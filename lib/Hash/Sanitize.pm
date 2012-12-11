@@ -1,4 +1,4 @@
-package HASH::Sanitize;
+package Hash::Sanitize;
 
 use 5.006;
 use strict;
@@ -11,7 +11,7 @@ our @EXPORT_OK = (qw/sanitize_hash sanitize_hash_deep/);
 
 =head1 NAME
 
-HASH::Sanitize - Remove undesired keys from a hash (recursive)
+Hash::Sanitize - Remove undesired keys from a hash (recursive)
 
 =head1 VERSION
 
@@ -29,7 +29,7 @@ undesired keys.
 When called the method will iterate trough the hash keys and delete any keys
 that are non in the desired set.
 
-This module is like HASH::Util's "legal_keys" method with the difference that
+This module is like Hash::Util's "legal_keys" method with the difference that
 while legal_keys doens't let you create keys that are not allowed, this module
 alows you to modify an existing hash and get a sanitized copy of it.
 
@@ -39,7 +39,7 @@ Quick summary of what the module does.
 
 Perhaps a little code snippet.
 
-    use HASH::Sanitize qw(sanitize_hash sanitize_hash_deep);
+    use Hash::Sanitize qw(sanitize_hash sanitize_hash_deep);
 
     sanitize_hash(\%hash,\@allowed_keys);
     
@@ -198,7 +198,7 @@ automatically be notified of progress on your bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc HASH::Sanitize
+    perldoc Hash::Sanitize
 
 
 You can also look for information at:
@@ -229,7 +229,7 @@ L<http://search.cpan.org/dist/HASH-Sanitize/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2012 Gligan Calin Horea.
+Copyright 2012 Evozon Systems
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published
@@ -239,4 +239,4 @@ See http://dev.perl.org/licenses/ for more information.
 
 =cut
 
-1; # End of HASH::Sanitize
+1; # End of Hash::Sanitize
