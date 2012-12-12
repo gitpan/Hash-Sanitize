@@ -1,6 +1,6 @@
 package Hash::Sanitize;
 
-use 5.006;
+use 5.010;
 use strict;
 use warnings FATAL => 'all';
 
@@ -19,7 +19,7 @@ Version 0.01
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 DESCRIPTION
 

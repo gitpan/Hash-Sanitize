@@ -20,5 +20,5 @@ no_index:
 requires:
   Clone: 0
   Exporter: 0
-  perl: 5.006
-version: 0.01
+  perl: 5.01
+version: 0.02

@@ -1,5 +1,7 @@
-Revision history for HASH-Sanitize
+Revision history for Hash-Sanitize
 
-0.01    Date/time
-        First version, released on an unsuspecting world.
+0.01    11/12/2012
+        First version
 
+0.02    12/12/2012
+        Min perl version required is 5.10.0 (because we use smatmatch)
