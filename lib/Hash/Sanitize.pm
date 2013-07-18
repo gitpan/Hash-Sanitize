@@ -15,11 +15,11 @@ Hash::Sanitize - Remove undesired keys from a hash (recursive)
 
 =head1 VERSION
 
-Version 0.01
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 DESCRIPTION
 
@@ -110,9 +110,9 @@ sub sanitize_hash {
     }
     else { #void context
         #delete the keys that are not allowed to be there
-        foreach (keys %{$hash}) {
-            delete $hash->{$_} unless ($_ ~~ $allowed_keys);
-        }
+	foreach my $k (keys %{$hash}) {
+            delete $hash->{$k} unless ( grep { $k eq $_ } @{$allowed_keys} );
+        }    
     }
 }
 
@@ -169,14 +169,14 @@ sub sanitize_hash_deep {
     }
     else { #void context
         #delete the keys that are not allowed to be there
-        foreach (keys %{$hash}) {
-            if (! ($_ ~~ $allowed_keys) ) {
-                delete $hash->{$_};
+        foreach my $k (keys %{$hash}) {
+            if (! (grep { $k eq $_ } @{$allowed_keys}) ) {
+                delete $hash->{$k};
                 next;
             }
             else {
-                if (ref($hash->{$_}) && ref($hash->{$_}) eq "HASH") {
-                    sanitize_hash_deep($hash->{$_},$allowed_keys);
+                if (ref($hash->{$k}) && ref($hash->{$k}) eq "HASH") {
+                    sanitize_hash_deep($hash->{$k},$allowed_keys);
                 }
             }   
         }
